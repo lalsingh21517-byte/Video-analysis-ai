@@ -8,7 +8,7 @@ app = Flask(__name__)
 app.config["MAX_CONTENT_LENGTH"] = 50 * 1024 * 1024  # 50 MB
 
 client = genai.Client(api_key=os.environ.get("GEMINI_API_KEY"))
-MODEL = "gemini-3.8-flash"
+MODEL = "gemini-1.5-flash"
 
 PROMPT = (
     "इस वीडियो को ध्यान से देखो और बताओ कि इसमें जो दावा किया गया है "
